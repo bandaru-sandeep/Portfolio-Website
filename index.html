@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Sandeep</title>
+    <meta name="description"
+        content="Portfolio of Bandaru Sandeep, a Computer Science student specializing in Full Stack Development and Machine Learning.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Sandeep<span>.</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#education" class="mobile-link">Education</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="hero-name">Bandaru Sandeep</h1>
+                <h2 class="hero-role">Full Stack Developer & <br>ML Enthusiast</h2>
+                <p class="hero-description">
+                    Computer Science student passionate about building scalable web applications and exploring the
+                    frontiers of Machine Learning.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/bandaru-sandeep" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/bandaru-sandeep-644864258/" target="_blank"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:sandeepbandaru756@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:7207355143" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Abstract Decorative Elements -->
+
+                <div class="code-card">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="code-body">
+                        <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="key">name</span>: <span class="string">"Sandeep"</span>,
+  <span class="key">skills</span>: [<span class="string">"MERN"</span>, <span class="string">"ML"</span>, <span class="string">"Python"</span>],
+  <span class="key">hardWorker</span>: <span class="boolean">true</span>
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I am a passionate Computer Science student at <strong>SRM University-AP</strong> with a
+                            strong foundation in both Full Stack Development and Machine Learning.
+                        </p>
+                        <p>
+                            My journey involves building end-to-end web applications using the <strong>MERN
+                                stack</strong> (MongoDB, Express, React, Node.js) and exploring intelligent solutions
+                            through <strong>Machine Learning</strong> and <strong>Computer Vision</strong>. I
+                            experienced in data preprocessing, classical machine learning concepts, and rule-based
+                            predictions.
+                        </p>
+                        <p>
+                            I am eager to contribute to scalable, user-focused solutions and grow through real-world
+                            projects and collaboration.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">LeetCode Problems</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="timeline">
+                    <!-- Item -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jun 2024 - Aug 2024</div>
+                        <div class="timeline-content">
+                            <h3>Research Intern – Medical Image Enhancement</h3>
+                            <h4>SRM University-AP</h4>
+                            <p>
+                                Proficient in enhancing medical images to improve diagnostic accuracy using advanced
+                                techniques.
+                                Demonstrated significant improvement in image quality (Breast Cancer images) using
+                                various enhancement methods.
+                                Preferred SSIM over PSNR and MSE for more accurate image quality assessment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="category-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Dev</button>
+                    <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                    <button class="filter-btn" data-filter="other">Other</button>
+                </div>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects will be injected via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-wrapper">
+                    <!-- Categories will be filled by JS or static HTML -->
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span>C</span>
+                            <span>C++</span>
+                            <span>Java</span>
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>React.js</span>
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>FastAPI</span>
+                            <span>RESTful APIs</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Databases</h3>
+                        <div class="skill-tags">
+                            <span>MongoDB</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Machine Learning</h3>
+                        <div class="skill-tags">
+                            <span>Scikit-learn</span>
+                            <span>OpenCV</span>
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Concepts</h3>
+                        <div class="skill-tags">
+                            <span>Git/GitHub</span>
+                            <span>Docker</span>
+                            <span>VS Code</span>
+                            <span>Jupyter</span>
+                            <span>DSA</span>
+                            <span>OOP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications -->
+        <section id="education" class="section education-section">
+            <div class="container">
+                <div class="education-grid">
+                    <div class="edu-column">
+                        <h2 class="section-title left-align">Education</h2>
+                        <div class="edu-card">
+                            <span class="year">2022 - 2026</span>
+                            <h3>B.Tech in Computer Science</h3>
+                            <h4>SRM University-AP</h4>
+                            <p>GPA: 7.44 / 10.0</p>
+                        </div>
+                        <div class="edu-card">
+                            <span class="year">2022</span>
+                            <h3>Class 12th State Board</h3>
+                            <p>Score: 82.3%</p>
+                        </div>
+                        <div class="edu-card">
+                            <span class="year">2020</span>
+                            <h3>Class 10th SSC Board</h3>
+                            <p>Score: 79.3%</p>
+                        </div>
+                    </div>
+                    <div class="edu-column">
+                        <h2 class="section-title left-align">Certifications</h2>
+                        <ul class="cert-list">
+                            <li><i class="fas fa-certificate"></i> The Joy Of Computing Using Python</li>
+                            <li><i class="fas fa-certificate"></i> Certification in MongoDB</li>
+                            <li><i class="fas fa-certificate"></i> Master JavaScript, Udemy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <a href="mailto:sandeepbandaru756@gmail.com">sandeepbandaru756@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <a href="tel:7207355143">+91 7207355143</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h3>LinkedIn</h3>
+                                <a href="https://www.linkedin.com/in/bandaru-sandeep-644864258/" target="_blank">Connect
+                                    on LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="container footer-content">
+
+            <div class="social-links small">
+                <a href="https://github.com/bandaru-sandeep" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bandaru-sandeep-644864258/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

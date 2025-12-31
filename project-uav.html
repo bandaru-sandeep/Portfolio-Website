@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAV-based Stampede Detection - Bandaru Sandeep</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-detail-container {
+            max-width: 900px;
+            margin: 120px auto 60px;
+            padding: 0 20px;
+        }
+
+        .project-header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 30px;
+        }
+
+        .project-title {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .project-subtitle {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            font-style: italic;
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .content-section h3 {
+            font-size: 1.5rem;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary);
+            padding-left: 15px;
+        }
+
+        .content-section p {
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .content-section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        .content-section li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .back-btn:hover {
+            color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Reuse Navigation from main page -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Sandeep<span>.</span></a>
+            <div class="nav-links">
+                <a href="index.html#projects">Back to Portfolio</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="project-detail-container">
+        <a href="index.html#projects" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+
+        <header class="project-header">
+            <h1 class="project-title">Stampede Prediction and Avoidance Using Deep Learning</h1>
+            <div class="project-subtitle">UROP Project | SRM University-AP | Dec 2025</div>
+        </header>
+
+        <article>
+            <section class="content-section">
+                <h3>Introduction</h3>
+                <p>Stampedes are among the worst failures of crowd management. This project proposes a multi-mode,
+                    real-time proactive stampede detection system designed to identify precursor conditions rather than
+                    just detecting the stampede itself. It addresses the gap between perception and timely action by
+                    monitoring crowd behavior across the entire scene.</p>
+            </section>
+
+            <section class="content-section">
+                <h3>Problem Definition</h3>
+                <p>The central problem addressed is the early identification of precursor conditions. Dangerous dynamics
+                    often originate in low-density peripheral areas, not just dense cores. Localized panic and reverse
+                    flows can escalate rapidly. Manual monitoring struggles to detect these subtle distributed changes
+                    in real time.</p>
+            </section>
+
+            <section class="content-section">
+                <h3>Proposed Solution</h3>
+                <p>The solution adopts a four-stage multi-modal pipeline:</p>
+                <ul>
+                    <li><strong>Reference Image Library:</strong> 5 representative frames from historical stampedes
+                        serve as visual templates.</li>
+                    <li><strong>Fast Visual Pre-Screening:</strong> UAV captures live video at 10 FPS. Frames are
+                        processed using perceptual hashing and compared with reference images.</li>
+                    <li><strong>Emergency Formula with RFID Fusion:</strong> If visual similarity > 40%, the system
+                        retrieves RFID-based indicators (density, movement) and computes a risk score.</li>
+                    <li><strong>Entropy-Based Confirmation:</strong> The risk score is converted into an entropy
+                        measure. If outside safe range < 0.06 or> 0.94, an alarm is triggered.</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h3>Methodology</h3>
+                <p>The system uses specific algorithms for efficiency:</p>
+                <ul>
+                    <li><strong>Perceptual Hashing:</strong> Frames are converted to grayscale, downsampled to 8x8, and
+                        hashed (64-bit). Similarity is measured using Hamming distance.</li>
+                    <li><strong>Emergency Formula:</strong> stp = K * Dt * (Rm * Cm)² * Pr * St² * Hb * ms * HV. This
+                        integrates density (Dt), reverse movement (Rm), cross-movement (Cm), pressure (Pr), etc.</li>
+                    <li><strong>Entropy Verification:</strong> Entropy = -p * log(p), where p is normalized instability
+                        probability. This reduces false alarms.</li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h3>Implementation & Results</h3>
+                <p>The system was implemented as a multi-stage pipeline. The combination of lightweight visual analysis,
+                    multi-sensor data fusion, and rule-based confirmation provided a reliable approach to early warning.
+                    The frame skipping optimization reduced processing load by 20-30% in stable conditions. The system
+                    successfully triggers a hooter alarm when entropy crosses critical thresholds, enabling immediate
+                    response.</p>
+            </section>
+
+            <section class="content-section">
+                <h3>Conclusion</h3>
+                <p>This project demonstrates a proactive technology-based remedy for crowd safety. By integrating simple
+                    visual screening with complex sensor fusion, it achieves high-speed detection capable of
+                    anticipating stampedes in real-time. It minimizes false alarms and provides actionable intelligence
+                    to security personnel.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Bandaru Sandeep. All rights reserved.</p>
+            <div class="social-links small">
+                <a href="https://github.com/bandaru-sandeep" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bandaru-sandeep-644864258/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
